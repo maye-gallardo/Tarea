@@ -1,20 +1,133 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<head>
+    <style>
+
+      header {
+      text-align: center;
+      color: #000000;
+      background:  #ff1a8c;
+      background: url("http://24.media.tumblr.com/tumblr_m6wcv997iO1rxa4pmo1_500.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+      
+  
+
+      body {
+        margin: 0;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color:#000000;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: #FF1493;
+        text-align: center;
+        padding: 16px 18px;
+        font-size: 19px;
+      }
+      
+      .topnav a:hover {
+        background-color: #FFC0CB;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color:#FF1493;;
+        color: black;
+      }
+
+      .topnav a.bienvenido {
+        background-color:#C71585;
+        color: black;
+      }
+      
+      .container {
+        position: relative;
+        width:40%; 
+      }
+      
+      .image {
+        width:140%; 
+        height:60%;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgba(31,31, 31, 0, 9);
+        -webkit-transition: opacity 0.2s ;
+        overflow: hidden;
+        height:0;
+        transition: 0.5s ease;
+        opacity: 0;
+      }
+      
+      .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+        opacity: 1;
+      }
+      
+      .text {
+        white-space: nowrap; 
+        color: black;
+        font-size: 60px;
+        position: absolute;
+        overflow: visible;
+        top: 40%;
+        left: 180%;
+        transform: translate(-210%, -210%);
+        -ms-transform: translate(-210%, -210%);
+      }
+    </style>
+  </head>
+  <header>
+      <body>
+          <div class="topnav">
+              <b><a class="active" href="#home"><span class="glyphicon glyphicon-home"></span></a></b>
+              <b><a href="#demo"><span class="glyphicon glyphicon-grain"></span>Perfil</a></b>
+              <b><a href="#demo2"><span class="glyphicon glyphicon-grain"></span>Biografia</a></b>
+              <b><a href="#demo4"><span class="glyphicon glyphicon-grain"></span>Cato</a></b>
+              <b><a href="#demo5"><span class="glyphicon glyphicon-grain"></span>Ayuda a un amigo</a></b>
+            </div>
+            
+
+      </body>
+      
+      <div class="container">
+          <img src="http://24.media.tumblr.com/tumblr_m6wcv997iO1rxa4pmo1_500.jpg" alt="BIENVENIDO" class="image"  align="center">
+          <div class="overlay">
+            <div class="text">  BIENVENIDO </div>
+          </div>
+        </div>
+        <div class="topnav">
+            <b><a style="color: black;">sdsdas </a></b>
+          </div>
+<app-demo></app-demo>
+<div class="topnav">
+    <b><a style="color: black;">sdsdas </a></b>
+  </div>
+<app-demo2></app-demo2>
+<div class="topnav">
+    <b><a style="color: black;">sdsdas </a></b>
+  </div>
+  <app-demo4></app-demo4>
+  <div class="topnav">
+      <b><a style="color: black;">sdsdas </a></b>
+    </div>
+    <app-demo5></app-demo5>
+</header>
+
+      
+
 
